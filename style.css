@@ -98,6 +98,22 @@ footer {
   }
 }
 
+/* For large screens (newer iPhones with high resolution) */
+@media (max-width: 1280px) {
+  button {
+    padding: 16px 32px; /* Bigger buttons for bigger screens */
+    font-size: 18px;    /* Larger font on bigger screens */
+  }
+}
+
+/* For smaller screens (older iPhones or compact devices) */
+@media (max-width: 1024px) {
+  button {
+    padding: 12px 24px; /* Smaller buttons for smaller screens */
+    font-size: 16px;    /* Adjust font size */
+  }
+}
+
 /* For very small screens (portrait mobile phones) */
 @media (max-width: 480px) {
   /* Make links stack vertically on mobile */

@@ -3,6 +3,8 @@ body {
   background-color: black;          /* Black background */
   color: white;                     /* White text */
   font-family: 'Andale Mono', 'AndaleMono', monospace;  /* Use Andale Mono, AndaleMono, or fallback to monospace */
+  margin: 0;                         /* Remove default margin */
+  padding: 0;                        /* Remove default padding */
 }
 
 /* Style links to be white and change color on hover */
@@ -12,7 +14,7 @@ a {
 }
 
 a:hover {
-  color: #ffbad2 !important;                   /* Change color to pink when hovered */
+  color: #ffbad2 !important;        /* Change color to pink when hovered */
 }
 
 /* Style headings */
@@ -20,15 +22,88 @@ h1, h2, h3, h4, h5, h6 {
   color: white;                     /* White text for headings */
 }
 
-/* Style buttons */
+/* Style for the image */
+img {
+  max-width: 100%;                  /* Ensure image doesn't overflow the container */
+  height: auto;                     /* Maintain aspect ratio */
+  border: 5px solid #ffbad2;        /* Pink border around the image */
+  border-radius: 10px;              /* Rounded corners for the image */
+  display: block;
+  margin: 20px auto;                /* Center the image */
+}
+
+/* Style buttons (white background and pink hover) */
 button {
-  background-color: #333;           /* Dark gray button */
-  color: white;                     /* White text on the button */
-  border: none;
+  background-color: white;           /* White background */
+  color: black;                      /* Black text */
+  border: 2px solid #ffbad2;         /* Pink border */
   padding: 10px 20px;
   cursor: pointer;
+  font-size: 16px;                   /* Set a nice readable font size */
+  border-radius: 5px;                /* Rounded corners for the button */
 }
 
 button:hover {
-  background-color: #ffbad2 !important;           /* Slightly lighter gray on hover */
+  background-color: #ffbad2;         /* Pink background on hover */
+  color: white;                      /* White text on hover */
+  border-color: white;               /* White border on hover */
+}
+
+/* Styling for navigation links */
+nav a {
+  margin: 0 10px;
+  font-size: 18px;
+  text-transform: uppercase; /* Make text uppercase for a modern look */
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;           /* Dark footer */
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+/* Responsive Design for Smaller Screens */
+
+/* For screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+  /* Body padding */
+  body {
+    padding: 20px;  /* Add padding around the content */
+  }
+
+  /* Make headings smaller on mobile */
+  h1 {
+    font-size: 2em;  /* Smaller font for headings on mobile */
+  }
+
+  /* Adjust link font size */
+  nav a {
+    font-size: 16px;  /* Smaller font for navigation links */
+  }
+
+  /* Adjust buttons for smaller screens */
+  button {
+    padding: 8px 16px;  /* Smaller button padding on mobile */
+    font-size: 14px;     /* Smaller font size for buttons */
+  }
+
+  /* Make images responsive */
+  img {
+    max-width: 100%;    /* Ensure images don't overflow on smaller screens */
+    height: auto;       /* Maintain aspect ratio */
+    margin: 10px 0;     /* Adjust margin for mobile */
+  }
+}
+
+/* For very small screens (portrait mobile phones) */
+@media (max-width: 480px) {
+  /* Make links stack vertically on mobile */
+  nav a {
+    display: block;      /* Stack links vertically */
+    margin: 10px 0;      /* Add margin between links */
+    text-align: center;  /* Center links */
+  }
 }

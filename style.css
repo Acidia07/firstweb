@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-  color: #ffbad2;                   /* Change color to pink when hovered */
+  color: #ffbad2 !important;                   /* Change color to pink when hovered */
 }
 
 /* Style headings */
@@ -30,5 +30,5 @@ button {
 }
 
 button:hover {
-  background-color: #ffbad2;           /* Slightly lighter gray on hover */
+  background-color: #ffbad2 !important;           /* Slightly lighter gray on hover */
 }

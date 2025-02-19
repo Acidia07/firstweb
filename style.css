@@ -118,11 +118,11 @@ footer {
   }
 
   h1 {
-    font-size: 3em;  /* Larger font for headings on larger screens */
+    font-size: 1.5em;  /* Larger font for headings on larger screens */
   }
 
   h2 {
-    font-size: 2.8em; /* Adjust size for h2 */
+    font-size: 1.2em; /* Adjust size for h2 */
   }
 }
 

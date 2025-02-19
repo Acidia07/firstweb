@@ -20,6 +20,10 @@ a:hover {
 /* Style headings */
 h1, h2, h3, h4, h5, h6 {
   color: white;                     /* White text for headings */
+  word-wrap: break-word;            /* Ensure text wraps instead of overflowing */
+  max-width: 100%;                  /* Make sure it doesn’t exceed the container width */
+  padding: 0 20px;                  /* Optional: Adds some padding to make the title not stick to the sides */
+  margin: 0 auto;                   /* Center the titles */
 }
 
 /* Style for the image */
@@ -76,7 +80,11 @@ footer {
 
   /* Make headings smaller on mobile */
   h1 {
-    font-size: 2em;  /* Smaller font for headings on mobile */
+    font-size: 2.5em;  /* Smaller font for headings on mobile */
+  }
+
+  h2 {
+    font-size: 2.2em;   /* Adjust h2 size */
   }
 
   /* Adjust link font size */
@@ -104,6 +112,14 @@ footer {
     padding: 16px 32px; /* Bigger buttons for bigger screens */
     font-size: 18px;    /* Larger font on bigger screens */
   }
+
+  h1 {
+    font-size: 3em;  /* Larger font for headings on larger screens */
+  }
+
+  h2 {
+    font-size: 2.8em; /* Adjust size for h2 */
+  }
 }
 
 /* For smaller screens (older iPhones or compact devices) */
@@ -111,6 +127,14 @@ footer {
   button {
     padding: 12px 24px; /* Smaller buttons for smaller screens */
     font-size: 16px;    /* Adjust font size */
+  }
+
+  h1 {
+    font-size: 2.8em;  /* Slightly smaller for older iPhones */
+  }
+
+  h2 {
+    font-size: 2.5em;   /* Adjust h2 size */
   }
 }
 
@@ -121,5 +145,13 @@ footer {
     display: block;      /* Stack links vertically */
     margin: 10px 0;      /* Add margin between links */
     text-align: center;  /* Center links */
+  }
+
+  h1 {
+    font-size: 2.2em;  /* Further reduce size on very small devices */
+  }
+
+  h2 {
+    font-size: 2em;   /* Further reduce size for h2 */
   }
 }

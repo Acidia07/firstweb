@@ -80,15 +80,15 @@ footer {
 
   /* Make headings smaller on mobile */
   h1 {
-    font-size: 2.5em;  /* Smaller font for headings on mobile */
+    font-size: 1.5em;  /* Smaller font for headings on mobile */
   }
 
   h2 {
-    font-size: 2.2em;   /* Adjust h2 size */
+    font-size: 1.2em;   /* Adjust h2 size */
   }
 
   h3 {
-    font-size: 2em;     /* Adjust h3 size */
+    font-size: 1em;     /* Adjust h3 size */
   }
 
   /* Adjust link font size */

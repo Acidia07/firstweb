@@ -19,6 +19,19 @@
     <!-- Adding an image -->
     <img src="IMG_2786.jpeg" alt="ImBrokenPleaseHelp" width="500" height="500">
   </main>
+
+  <main>
+<iframe src="https://www.tiktok.com/@bunnybunnybunnny_/photo/7473052779787930922?is_from_webapp=1&sender_device=pc" width="325" height="580" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>    
+ <script>
+  const iframe = document.getElementById("tiktok-video");
+  iframe.onload = function() {
+    const videoElement = iframe.contentWindow.document.querySelector('video');
+    videoElement.onended = function() {
+      videoElement.play(); // This will restart the video once it finishes
+    };
+  };
+</script>
+  </main>
   
   <footer>
     <p>©LLL,AllRightsReserved</p>
